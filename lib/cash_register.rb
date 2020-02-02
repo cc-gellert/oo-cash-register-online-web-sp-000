@@ -18,8 +18,8 @@ class CashRegister
     if(@discount == 0)
       message = "There is no discount to apply."
     else 
-      @total*=((100 - @discount)*0.01).round 
-      message = "After the discount, the total comes to $#{@total}"
+      @total*=((100 - @discount)*0.01) 
+      message = "After the discount, the total comes to $#{@total.round }"
     end 
     message 
   end 
