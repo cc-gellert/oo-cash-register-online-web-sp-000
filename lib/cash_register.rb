@@ -14,8 +14,9 @@ class CashRegister
     if(nodiscount)
       puts "There is no discount to apply."
     else 
-    @total*=((100 - emplDisc)*0.01)
-    puts "After the discount, the total comes to $#{@total}"
+      @total*=((100 - emplDisc)*0.01)
+      puts "After the discount, the total comes to $#{@total}"
+    end 
   end 
   
   def items 
